@@ -1,0 +1,13 @@
+2025-03-20 10:23:05.339 | INFO     | __main__:main:41 - Starting data preparation...
+2025-03-20 10:23:05.339 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\customers_data.csv.
+2025-03-20 10:23:05.340 | ERROR    | __main__:read_raw_data:29 - File not found: C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\customers_data.csv
+2025-03-20 10:23:05.340 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\products_data.csv.
+2025-03-20 10:23:05.342 | ERROR    | __main__:read_raw_data:29 - File not found: C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\products_data.csv
+2025-03-20 10:23:05.343 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\sales_data.csv.
+2025-03-20 10:23:05.343 | ERROR    | __main__:read_raw_data:29 - File not found: C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\sales_data.csv
+2025-03-20 10:23:05.343 | INFO     | __main__:main:45 - Data preparation complete.
+2025-03-20 10:24:10.220 | INFO     | __main__:main:41 - Starting data preparation...
+2025-03-20 10:24:10.221 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\customers_data.csv.
+2025-03-20 10:24:10.222 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\products_data.csv.
+2025-03-20 10:24:10.223 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\raw\sales_data.csv.
+2025-03-20 10:24:10.224 | INFO     | __main__:main:45 - Data preparation complete.

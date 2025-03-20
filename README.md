@@ -22,37 +22,33 @@ git clone <URL>
 ## Step 3: Create files .gitignore and requirements.txt
 -	Copy file contents from starter repo provided
 
-## Step 4: Create a local Python virtual environment
+## Step 4: Create and activate virtual environment
 
 ```shell
 source py -m venv .venv
 ```
-
-## Step 5: Activate the virtual environment
--	Done whenever you open a new terminal
-
 ```shell
 source .venv\Scripts\activate
 ```
 
-## Step 6: Install Packages 
+## Step 5: Install Packages 
 
 ```shell
 source py -m pip install --upgrade -r requirements.txt
 ```
 
-## Step 7 (Optional): Verify .venv Setup
+## Step 6 (Optional): Verify .venv Setup
 
 ```shell
 py -m datafun_venv_checker.venv_checker
 ```
 
-## Step 8: Create data and data\raw folders then get data tables
+## Step 7: Create data and data\raw folders then get data tables
 -	Copy customers_data.csv from smart-store-jillhumes repo
 -	Copy products_data.csv from smart-store-jillhumes repo
 -	Copy sales_data.csv from smart-store-jillhumes repo
 
-## Step 9: Execute the initial project script
+## Step 8: Execute the initial project script
 
 ```shell
 py scripts/data_prep.py

@@ -1,3 +1,16 @@
+"""
+Module 3: Data Preparation Script
+File: scripts/prepare_sales_data.py
+
+This script is copied from the example given but includes only the sales_data portion. 
+Minor modifications were made to the code based on the errors I introduced to the raw data. 
+
+This script loads raw CSV files from the 'data/raw/' directory, cleans and prepares each file, 
+and saves the prepared data to 'data/prepared/'.
+The data preparation steps include removing duplicates, handling missing values, 
+trimming whitespace, and more.
+"""
+
 import pathlib
 import sys
 import pandas as pd

@@ -44,7 +44,7 @@ def main() -> None:
 
     df_customers['Name'] = df_customers['Name'].str.strip()  # Trim whitespace from column values
     df_customers = df_customers.dropna(subset=['CustomerID', 'Name'])  # Drop rows missing critical info
-    
+
     scrubber_customers = DataScrubber(df_customers)
     scrubber_customers.check_data_consistency_before_cleaning()
     scrubber_customers.inspect_data()
@@ -53,49 +53,8 @@ def main() -> None:
     df_customers = scrubber_customers.parse_dates_to_add_standard_datetime('JoinDate')
     scrubber_customers.check_data_consistency_after_cleaning()
 
-    save_prepared_data(df_customers, "customers_data_prepared.csv")
-
-    logger.info("========================")
-    logger.info("Starting PRODUCTS prep")
-    logger.info("========================")
-
-    df_products = read_raw_data("products_data.csv")
-
-    df_products.columns = df_products.columns.str.strip()  # Clean column names
-    df_products = df_products.drop_duplicates()            # Remove duplicates
-
-    df_products['ProductName'] = df_products['ProductName'].str.strip()  # Trim whitespace from column values
-    df_products = df_products.dropna(subset=['ProductID', 'ProductName'])  # Drop rows missing critical info
-    df_products = df_products.drop(['StockQuantity']>1000)  # Drop rows missing critical info
-    
-    scrubber_products = DataScrubber(df_products)
-    scrubber_products.check_data_consistency_before_cleaning()
-    scrubber_products.inspect_data()
-
-    scrubber_products.check_data_consistency_after_cleaning()
-    save_prepared_data(df_products, "products_data_prepared.csv")
-
-    logger.info("========================")
-    logger.info("Starting SALES prep")
-    logger.info("========================")
-
-    df_sales = read_raw_data("sales_data.csv")
-
-    df_sales.columns = df_sales.columns.str.strip()  # Clean column names
-    df_sales = df_sales.drop_duplicates()            # Remove duplicates
-
-    df_sales['SaleDate'] = pd.to_datetime(df_sales['SaleDate'], errors='coerce')  # Ensure sale_date is datetime
-    df_sales = df_sales.dropna(subset=['TransactionID', 'SaleDate'])  # Drop rows missing key information
-    
-    scrubber_sales = DataScrubber(df_sales)
-    scrubber_sales.check_data_consistency_before_cleaning()
-    scrubber_sales.inspect_data()
-    
-    df_sales = scrubber_sales.handle_missing_data(fill_value="Unknown")
-    scrubber_sales.check_data_consistency_after_cleaning()
-
-    save_prepared_data(df_sales, "sales_data_prepared.csv")
-
+   save_prepared_data(df_customers, "customers_data_prepared.csv")
+   
     logger.info("======================")
     logger.info("FINISHED data_prep.py")
     logger.info("======================")

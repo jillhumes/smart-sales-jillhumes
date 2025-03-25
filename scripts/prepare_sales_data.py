@@ -34,48 +34,6 @@ def main() -> None:
     logger.info("======================")
 
     logger.info("========================")
-    logger.info("Starting CUSTOMERS prep")
-    logger.info("========================")
-
-    df_customers = read_raw_data("customers_data.csv")
-
-    df_customers.columns = df_customers.columns.str.strip()  # Clean column names
-    df_customers = df_customers.drop_duplicates()            # Remove duplicates
-
-    df_customers['Name'] = df_customers['Name'].str.strip()  # Trim whitespace from column values
-    df_customers = df_customers.dropna(subset=['CustomerID', 'Name'])  # Drop rows missing critical info
-    
-    scrubber_customers = DataScrubber(df_customers)
-    scrubber_customers.check_data_consistency_before_cleaning()
-    scrubber_customers.inspect_data()
-    
-    df_customers = scrubber_customers.handle_missing_data(fill_value="N/A")
-    df_customers = scrubber_customers.parse_dates_to_add_standard_datetime('JoinDate')
-    scrubber_customers.check_data_consistency_after_cleaning()
-
-    save_prepared_data(df_customers, "customers_data_prepared.csv")
-
-    logger.info("========================")
-    logger.info("Starting PRODUCTS prep")
-    logger.info("========================")
-
-    df_products = read_raw_data("products_data.csv")
-
-    df_products.columns = df_products.columns.str.strip()  # Clean column names
-    df_products = df_products.drop_duplicates()            # Remove duplicates
-
-    df_products['ProductName'] = df_products['ProductName'].str.strip()  # Trim whitespace from column values
-    df_products = df_products.dropna(subset=['ProductID', 'ProductName'])  # Drop rows missing critical info
-    df_products = df_products.drop(['StockQuantity']>1000)  # Drop rows missing critical info
-    
-    scrubber_products = DataScrubber(df_products)
-    scrubber_products.check_data_consistency_before_cleaning()
-    scrubber_products.inspect_data()
-
-    scrubber_products.check_data_consistency_after_cleaning()
-    save_prepared_data(df_products, "products_data_prepared.csv")
-
-    logger.info("========================")
     logger.info("Starting SALES prep")
     logger.info("========================")
 
@@ -85,7 +43,7 @@ def main() -> None:
     df_sales = df_sales.drop_duplicates()            # Remove duplicates
 
     df_sales['SaleDate'] = pd.to_datetime(df_sales['SaleDate'], errors='coerce')  # Ensure sale_date is datetime
-    df_sales = df_sales.dropna(subset=['TransactionID', 'SaleDate'])  # Drop rows missing key information
+    df_sales = df_sales.dropna(subset=['TransactionID','CustomerID','ProductID','StoreID', 'SaleDate'])  # Drop rows missing key information
     
     scrubber_sales = DataScrubber(df_sales)
     scrubber_sales.check_data_consistency_before_cleaning()

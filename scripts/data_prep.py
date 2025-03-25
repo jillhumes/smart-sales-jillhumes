@@ -1,3 +1,30 @@
+"""
+Module 3: Data Preparation Script
+File: scripts/data_prep.py
+
+This script is just one example of a possible data preparation process.
+It loads raw CSV files from the 'data/raw/' directory, cleans and prepares each file, 
+and saves the prepared data to 'data/prepared/'.
+The data preparation steps include removing duplicates, handling missing values, 
+trimming whitespace, and more.
+
+This script uses the general DataScrubber class and its methods to perform common, reusable tasks.
+
+To run it, open a terminal in the root project folder.
+Activate the local project virtual environment.
+Choose the correct command for your OS to run this script.
+
+py scripts\data_prep.py
+python3 scripts\data_prep.py
+
+NOTE: I use the ruff linter. 
+It warns if all import statements are not at the top of the file.  
+I was having trouble with the relative paths, so I  
+temporarily add the project root before I can import. 
+By adding this comment at the end of an import line noqa: E402
+ruff will ignore the warning on just that line. 
+"""
+
 import pathlib
 import sys
 import pandas as pd
@@ -65,8 +92,6 @@ def main() -> None:
     df_products = df_products.drop_duplicates()            # Remove duplicates
 
     df_products['ProductName'] = df_products['ProductName'].str.strip()  # Trim whitespace from column values
-    df_products = df_products.dropna(subset=['ProductID', 'ProductName'])  # Drop rows missing critical info
-    df_products = df_products.drop(['StockQuantity']>1000)  # Drop rows missing critical info
     
     scrubber_products = DataScrubber(df_products)
     scrubber_products.check_data_consistency_before_cleaning()

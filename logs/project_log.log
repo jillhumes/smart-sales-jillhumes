@@ -317,3 +317,23 @@
 2025-03-25 08:39:32.292 | INFO     | __main__:main:57 - ======================
 2025-03-25 08:39:32.292 | INFO     | __main__:main:58 - FINISHED data_prep.py
 2025-03-25 08:39:32.293 | INFO     | __main__:main:59 - ======================
+2025-03-25 09:42:54.220 | INFO     | __main__:main:45 - ======================
+2025-03-25 09:42:54.220 | INFO     | __main__:main:46 - STARTING data_prep.py
+2025-03-25 09:42:54.220 | INFO     | __main__:main:47 - ======================
+2025-03-25 09:42:54.221 | INFO     | __main__:main:49 - ========================
+2025-03-25 09:42:54.221 | INFO     | __main__:main:50 - Starting CUSTOMERS prep
+2025-03-25 09:42:54.221 | INFO     | __main__:main:51 - ========================
+2025-03-25 09:42:54.239 | INFO     | __main__:save_prepared_data:41 - Data saved to C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\prepared\customers_data_prepared.csv
+2025-03-25 09:42:54.240 | INFO     | __main__:main:71 - ======================
+2025-03-25 09:42:54.240 | INFO     | __main__:main:72 - FINISHED data_prep.py
+2025-03-25 09:42:54.240 | INFO     | __main__:main:73 - ======================
+2025-03-25 09:43:22.602 | INFO     | __main__:main:45 - ======================
+2025-03-25 09:43:22.603 | INFO     | __main__:main:46 - STARTING data_prep.py
+2025-03-25 09:43:22.603 | INFO     | __main__:main:47 - ======================
+2025-03-25 09:43:22.603 | INFO     | __main__:main:49 - ========================
+2025-03-25 09:43:22.604 | INFO     | __main__:main:50 - Starting CUSTOMERS prep
+2025-03-25 09:43:22.604 | INFO     | __main__:main:51 - ========================
+2025-03-25 09:43:22.618 | INFO     | __main__:save_prepared_data:41 - Data saved to C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\prepared\customers_data_prepared.csv
+2025-03-25 09:43:22.618 | INFO     | __main__:main:71 - ======================
+2025-03-25 09:43:22.618 | INFO     | __main__:main:72 - FINISHED data_prep.py
+2025-03-25 09:43:22.619 | INFO     | __main__:main:73 - ======================

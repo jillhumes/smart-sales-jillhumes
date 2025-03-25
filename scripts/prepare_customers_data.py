@@ -63,10 +63,10 @@ def main() -> None:
     scrubber_customers.inspect_data()
     
     df_customers = scrubber_customers.handle_missing_data(fill_value="N/A")
-    df_customers = scrubber_customers.parse_dates_to_add_standard_datetime('JoinDate')
+    #df_customers = scrubber_customers.parse_dates_to_add_standard_datetime('JoinDate')
     scrubber_customers.check_data_consistency_after_cleaning()
 
-   save_prepared_data(df_customers, "customers_data_prepared.csv")
+    save_prepared_data(df_customers, "customers_data_prepared.csv")
    
     logger.info("======================")
     logger.info("FINISHED data_prep.py")

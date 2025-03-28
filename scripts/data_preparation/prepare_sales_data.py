@@ -16,7 +16,7 @@ import sys
 import pandas as pd
 
 # For local imports, temporarily add project root to Python sys.path
-PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 

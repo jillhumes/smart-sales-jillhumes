@@ -337,3 +337,60 @@
 2025-03-25 09:43:22.618 | INFO     | __main__:main:71 - ======================
 2025-03-25 09:43:22.618 | INFO     | __main__:main:72 - FINISHED data_prep.py
 2025-03-25 09:43:22.619 | INFO     | __main__:main:73 - ======================
+2025-03-28 09:15:18.614 | INFO     | __main__:main:45 - ======================
+2025-03-28 09:15:18.615 | INFO     | __main__:main:46 - STARTING data_prep.py
+2025-03-28 09:15:18.615 | INFO     | __main__:main:47 - ======================
+2025-03-28 09:15:18.615 | INFO     | __main__:main:49 - ========================
+2025-03-28 09:15:18.615 | INFO     | __main__:main:50 - Starting CUSTOMERS prep
+2025-03-28 09:15:18.615 | INFO     | __main__:main:51 - ========================
+2025-03-28 09:15:18.627 | INFO     | __main__:save_prepared_data:41 - Data saved to C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\prepared\customers_data_prepared.csv
+2025-03-28 09:15:18.627 | INFO     | __main__:main:71 - ======================
+2025-03-28 09:15:18.627 | INFO     | __main__:main:72 - FINISHED data_prep.py
+2025-03-28 09:15:18.627 | INFO     | __main__:main:73 - ======================
+2025-03-28 09:17:10.234 | INFO     | __main__:main:48 - ======================
+2025-03-28 09:17:10.235 | INFO     | __main__:main:49 - STARTING data_prep.py
+2025-03-28 09:17:10.235 | INFO     | __main__:main:50 - ======================
+2025-03-28 09:17:10.235 | INFO     | __main__:main:52 - ========================
+2025-03-28 09:17:10.236 | INFO     | __main__:main:53 - Starting CUSTOMERS prep
+2025-03-28 09:17:10.236 | INFO     | __main__:main:54 - ========================
+2025-03-28 09:17:10.247 | INFO     | __main__:save_prepared_data:44 - Data saved to C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\prepared\customers_data_prepared_test.csv
+2025-03-28 09:17:10.247 | INFO     | __main__:main:74 - ======================
+2025-03-28 09:17:10.248 | INFO     | __main__:main:75 - FINISHED data_prep.py
+2025-03-28 09:17:10.248 | INFO     | __main__:main:76 - ======================
+2025-03-28 09:21:11.988 | INFO     | __main__:main:48 - ======================
+2025-03-28 09:21:11.988 | INFO     | __main__:main:49 - STARTING data_prep.py
+2025-03-28 09:21:11.988 | INFO     | __main__:main:50 - ======================
+2025-03-28 09:21:11.998 | INFO     | __main__:save_prepared_data:44 - Data saved to C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\prepared\customers_data_prepared_test.csv
+2025-03-28 09:21:11.998 | INFO     | __main__:main:70 - ======================
+2025-03-28 09:21:11.998 | INFO     | __main__:main:71 - FINISHED data_prep.py
+2025-03-28 09:21:11.999 | INFO     | __main__:main:72 - ======================
+2025-03-28 09:56:48.218 | INFO     | __main__:main:45 - ======================
+2025-03-28 09:56:48.218 | INFO     | __main__:main:46 - STARTING data_prep.py
+2025-03-28 09:56:48.218 | INFO     | __main__:main:47 - ======================
+2025-03-28 09:56:48.219 | INFO     | __main__:main:49 - ========================
+2025-03-28 09:56:48.219 | INFO     | __main__:main:50 - Starting CUSTOMERS prep
+2025-03-28 09:56:48.219 | INFO     | __main__:main:51 - ========================
+2025-03-28 09:56:48.235 | INFO     | __main__:save_prepared_data:41 - Data saved to C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\prepared\customers_data_prepared.csv
+2025-03-28 09:56:48.236 | INFO     | __main__:main:71 - ======================
+2025-03-28 09:56:48.236 | INFO     | __main__:main:72 - FINISHED data_prep.py
+2025-03-28 09:56:48.236 | INFO     | __main__:main:73 - ======================
+2025-03-28 09:57:09.250 | INFO     | __main__:main:45 - ======================
+2025-03-28 09:57:09.250 | INFO     | __main__:main:46 - STARTING data_prep.py
+2025-03-28 09:57:09.251 | INFO     | __main__:main:47 - ======================
+2025-03-28 09:57:09.251 | INFO     | __main__:main:49 - ========================
+2025-03-28 09:57:09.251 | INFO     | __main__:main:50 - Starting PRODUCTS prep
+2025-03-28 09:57:09.251 | INFO     | __main__:main:51 - ========================
+2025-03-28 09:57:09.262 | INFO     | __main__:save_prepared_data:41 - Data saved to C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\prepared\products_data_prepared.csv
+2025-03-28 09:57:09.263 | INFO     | __main__:main:68 - ======================
+2025-03-28 09:57:09.263 | INFO     | __main__:main:69 - FINISHED data_prep.py
+2025-03-28 09:57:09.263 | INFO     | __main__:main:70 - ======================
+2025-03-28 09:57:24.115 | INFO     | __main__:main:45 - ======================
+2025-03-28 09:57:24.115 | INFO     | __main__:main:46 - STARTING data_prep.py
+2025-03-28 09:57:24.116 | INFO     | __main__:main:47 - ======================
+2025-03-28 09:57:24.116 | INFO     | __main__:main:49 - ========================
+2025-03-28 09:57:24.116 | INFO     | __main__:main:50 - Starting SALES prep
+2025-03-28 09:57:24.116 | INFO     | __main__:main:51 - ========================
+2025-03-28 09:57:24.138 | INFO     | __main__:save_prepared_data:41 - Data saved to C:\a - NWMS Projects\BI and Analytics\smart-sales-jillhumes\data\prepared\sales_data_prepared.csv
+2025-03-28 09:57:24.138 | INFO     | __main__:main:70 - ======================
+2025-03-28 09:57:24.138 | INFO     | __main__:main:71 - FINISHED data_prep.py
+2025-03-28 09:57:24.139 | INFO     | __main__:main:72 - ======================

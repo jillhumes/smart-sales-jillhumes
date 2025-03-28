@@ -4,14 +4,14 @@ Initialization of the smart sales project in Module 2
 
 -----
 
-## Step 1: Set-up remote repository on GitHub
+## Set-up remote repository on GitHub
 -	Naming Guidelines: use all lowercase and dashes between words
 -	Add brief description
 -	Select “Public” option
 -	Add default README file
 -	Create repository
 
-## Step 2: Clone GitHub repository to local machine
+## Clone GitHub repository to local machine
 -	Open new terminal in VS Code
 -	Copy <URL> from GitHub
 
@@ -19,10 +19,10 @@ Initialization of the smart sales project in Module 2
 git clone <URL>
 ```
 
-## Step 3: Create files .gitignore and requirements.txt
+## Create files .gitignore and requirements.txt
 -	Copy file contents from starter repo provided
 
-## Step 4: Create and activate virtual environment
+## Create and activate virtual environment
 
 ```shell
 source py -m venv .venv
@@ -31,30 +31,47 @@ source py -m venv .venv
 source .venv\Scripts\activate
 ```
 
-## Step 5: Install Packages 
+## Install Packages 
 
 ```shell
 source py -m pip install --upgrade -r requirements.txt
 ```
 
-## Step 6 (Optional): Verify .venv Setup
+## Optional: Verify .venv Setup
 
 ```shell
 py -m datafun_venv_checker.venv_checker
 ```
 
-## Step 7: Create data and data\raw folders then get data tables
--	Copy customers_data.csv from smart-store-jillhumes repo
--	Copy products_data.csv from smart-store-jillhumes repo
--	Copy sales_data.csv from smart-store-jillhumes repo
+## Create data and data\raw folders then get data tables
+-	Copy raw data files from starter repo
 
-## Step 8: Execute the initial project script
+## Create data\prepared folder
+
+## Create scripts data_scrubber.py and data_prep.py
+-	Copy file contents from starter repo provided
+
+## Create tests folder and script test_data_scrubber.py 
+-	Copy file contents from starter repo provided
+
+## Execute test script to confirm data_scrubber.py runs without error
 
 ```shell
-py scripts/data_prep.py
+py tests/test_data_scrubber.py
 ```
 
-## Final Step: Run add-commit-push to push new files to GitHub
+## Create unique data prep script for each raw data set
+-	Use data_prep.py as starting point and modify as needed
+
+## Execute data prep scripts
+
+```shell
+py scripts/prepare_customers_data.py
+py scripts/prepare_products_data.py
+py scripts/prepare_sales_data.py
+```
+
+## Run add-commit-push to push new files to GitHub
 
 ```shell
 git add .

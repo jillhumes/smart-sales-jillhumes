@@ -73,7 +73,7 @@ py scripts/prepare_sales_data.py
 
 ## Create & Execute script to 
 ### (1) Create data warehouse with dimension tables (customer & product) and fact tables (sale)
-- customer schema
+- customer schema:
     customer_id INTEGER PRIMARY KEY,
     name TEXT,
     region TEXT,
@@ -81,7 +81,7 @@ py scripts/prepare_sales_data.py
     loyalty_points INTEGER,
     preferred_contact_method TEXT
 
-- product schema    
+- product schema:    
     product_id INTEGER PRIMARY KEY,
     product_name TEXT,
     category TEXT,
@@ -89,7 +89,7 @@ py scripts/prepare_sales_data.py
     stock_quantity INTEGER,
     bin_number TEXT
 
-- sale schema
+- sale schema:
     sale_id INTEGER PRIMARY KEY,
     sale_date TEXT,
     customer_id INTEGER,

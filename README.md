@@ -71,6 +71,47 @@ py scripts/prepare_products_data.py
 py scripts/prepare_sales_data.py
 ```
 
+## Create & Execute script to 
+### (1) Create data warehouse with dimension tables (customer & product) and fact tables (sale)
+- customer schema
+    customer_id INTEGER PRIMARY KEY,
+    name TEXT,
+    region TEXT,
+    join_date TEXT,
+    loyalty_points INTEGER,
+    preferred_contact_method TEXT
+
+- product schema    
+    product_id INTEGER PRIMARY KEY,
+    product_name TEXT,
+    category TEXT,
+    unit_price REAL,
+    stock_quantity INTEGER,
+    bin_number TEXT
+
+- sale schema
+    sale_id INTEGER PRIMARY KEY,
+    sale_date TEXT,
+    customer_id INTEGER,
+    product_id INTEGER,
+    store_id INTEGER,
+    campaign_id INTEGER,
+    sale_amount_usd REAL,
+    discount_percent REAL,
+    payment_type TEXT,
+    FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
+    FOREIGN KEY (product_id) REFERENCES product (product_id)
+
+### (2) Load data into data warehouse
+- Use sample code from "P4. Create and Populate DW" as starting point and modify as needed
+- Modifications include:
+  - Rename dataframe columns to match the database schema
+  - add error processing using try...except keywords
+
+```shell
+py scripts/etl_to_dw.py
+```
+
 ## Run add-commit-push to push new files to GitHub
 
 ```shell

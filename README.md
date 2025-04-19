@@ -112,6 +112,33 @@ py scripts/prepare_sales_data.py
 py scripts/etl_to_dw.py
 ```
 
+## Connect Data Warehouse to Power BI
+- Get Data -> Select ODBC
+- Use dropdown menu to Select SmartSalesDSN
+- Select Tables -> Click Load to bring tables into Power BI
+
+![image](https://github.com/user-attachments/assets/ee7fad32-de4d-454d-b19d-a7c2f76931f1)
+
+## Create top_customers Query to summarize Total Sales per Customer
+- Use Odbc.Query("dsn=SmartSalesDSN", "<sql query>") function to create query
+      SELECT c.name, SUM(s.sale_amount_usd) AS total_spent
+      FROM sale s
+      JOIN customer c ON s.customer_id=c.customer_id
+      GROUP BY c.name
+      ORDER BY total_spent DESC
+
+  ![image](https://github.com/user-attachments/assets/62a4fa67-7d57-457b-bce8-582c09534d30)
+
+
+## Create Power BI Dashboard
+### (1) Slice on month_name
+### (2) Dice on category & region
+### (3) Drilldown on parsed_sale_date: year, quarter, month
+### (4) Bar Chart for Sales per Customer
+### (5) Line Chart for Sales Trends
+
+![image](https://github.com/user-attachments/assets/d01db424-5842-4cfc-9c18-b92e025e0c4d)
+
 ## Run add-commit-push to push new files to GitHub
 
 ```shell

@@ -139,6 +139,40 @@ py scripts/etl_to_dw.py
 
 ![image](https://github.com/user-attachments/assets/d01db424-5842-4cfc-9c18-b92e025e0c4d)
 
+## Perform BI Analysis
+Business Goal:  Identify variation in month-to-month sales to identify trends, if any, in total monthly sales.
+                Understanding the volatility in monthly sales allows for better forecasting of cashflows.
+
+### Create olap cube based on sale data
+- Use sample code from "P6. BI Insights and Storytelling" as starting point and modify as needed
+- Modifications to dimensions and metrics
+    Dimensions include: month,month-name, product_id
+    Metrics include: Sum(sale_amount), Mean(sale_amount), Min(sale_amount), Max(sale_amount), Count(sale_id)
+
+```shell
+py scripts\olap\olap_cubing.py
+```
+
+### Create script for BI Analysis and Visualizations
+- Use sample code from "P6. BI Insights and Storytelling" as starting point and modify as needed
+- Started with "olap_goal_sales_by_day.py" and added code for visualization from "olap_goal_top_product_by_day.py"
+- Analysis included identification of: 
+    Least profitable month: August with total sales of $4627.20.      
+    Most profitable month: July with total sales of $21038.12.
+- Visualizations included:
+    Bar chart of Total Sales by Month
+![alt text](image.png)
+    Stacked Bar chart of Total Sales per Month by ProductID
+ ![alt text](image-1.png)   
+
+```shell
+py scripts\olap\olap_goal_sales_by_month.py
+```
+
+### Suggested Business Action
+- The analysis showed significant variation in month-to-month sales with no obvious trend.
+- Additional analysis is recommended to understand sales by customer in an effort to stabilize sales. 
+
 ## Run add-commit-push to push new files to GitHub
 
 ```shell

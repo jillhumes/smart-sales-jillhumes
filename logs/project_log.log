@@ -394,3 +394,516 @@
 2025-03-28 09:57:24.138 | INFO     | __main__:main:70 - ======================
 2025-03-28 09:57:24.138 | INFO     | __main__:main:71 - FINISHED data_prep.py
 2025-03-28 09:57:24.139 | INFO     | __main__:main:72 - ======================
+2025-04-18 14:15:54.458 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-18 14:15:54.468 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 14:15:54.490 | INFO     | __main__:create_olap_cube:162 - OLAP cube created with dimensions: ['DayOfWeek', 'product_id', 'customer_id']
+2025-04-18 14:15:54.495 | INFO     | __main__:write_cube_to_csv:201 - OLAP cube saved to data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 14:15:54.495 | INFO     | __main__:main:233 - OLAP Cubing process completed successfully.
+2025-04-18 14:15:54.495 | INFO     | __main__:main:234 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 14:18:15.473 | INFO     | __main__:main:113 - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2025-04-18 14:18:15.477 | INFO     | __main__:load_olap_cube:50 - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 14:18:15.480 | INFO     | __main__:analyze_sales_by_weekday:66 - Sales aggregated by DayOfWeek successfully.
+2025-04-18 14:18:15.480 | INFO     | __main__:identify_least_profitable_day:77 - Least profitable day: Friday with revenue $8617.76.
+2025-04-18 14:18:15.480 | INFO     | __main__:main:123 - Least profitable day: Friday
+2025-04-18 14:18:15.480 | INFO     | __main__:main:124 - Close the Figure to complete this script.
+2025-04-18 14:18:16.118 | INFO     | __main__:visualize_sales_by_weekday:104 - Visualization saved to data\results\sales_by_day_of_week.png.
+2025-04-18 14:18:29.014 | INFO     | __main__:main:128 - Analysis and visualization completed successfully.
+2025-04-18 14:34:43.065 | INFO     | __main__:main:113 - Starting SALES_LOW_REVENUE_DAYOFWEEK analysis...
+2025-04-18 14:34:43.067 | INFO     | __main__:load_olap_cube:50 - OLAP cube data successfully loaded from data\olap_cubing_outputs\multidimensional_olap_cube.csv.
+2025-04-18 14:34:43.069 | INFO     | __main__:analyze_sales_by_weekday:66 - Sales aggregated by DayOfWeek successfully.
+2025-04-18 14:34:43.069 | INFO     | __main__:identify_least_profitable_day:77 - Least profitable day: Friday with revenue $8617.76.
+2025-04-18 14:34:43.069 | INFO     | __main__:main:123 - Least profitable day: Friday
+2025-04-18 14:34:43.069 | INFO     | __main__:main:124 - Close the Figure to complete this script.
+2025-04-18 14:34:43.229 | INFO     | __main__:visualize_sales_by_weekday:104 - Visualization saved to data\results\sales_by_day_of_week.png.
+2025-04-18 14:50:52.313 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-18 14:50:52.315 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 14:50:52.330 | INFO     | __main__:create_olap_cube:162 - OLAP cube created with dimensions: ['Month', 'product_id', 'customer_id']
+2025-04-18 14:50:52.332 | INFO     | __main__:write_cube_to_csv:201 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 14:50:52.332 | INFO     | __main__:main:233 - OLAP Cubing process completed successfully.
+2025-04-18 14:50:52.333 | INFO     | __main__:main:234 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 14:53:49.318 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-18 14:53:49.319 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 14:53:49.329 | INFO     | __main__:create_olap_cube:162 - OLAP cube created with dimensions: ['Month', 'product_id', 'customer_id']
+2025-04-18 14:53:49.332 | INFO     | __main__:write_cube_to_csv:201 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 14:53:49.332 | INFO     | __main__:main:233 - OLAP Cubing process completed successfully.
+2025-04-18 14:53:49.332 | INFO     | __main__:main:234 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 14:54:07.554 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-18 14:54:07.556 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 14:54:07.561 | INFO     | __main__:create_olap_cube:162 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 14:54:07.564 | INFO     | __main__:write_cube_to_csv:201 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 14:54:07.564 | INFO     | __main__:main:233 - OLAP Cubing process completed successfully.
+2025-04-18 14:54:07.565 | INFO     | __main__:main:234 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 14:57:10.868 | INFO     | __main__:main:221 - Starting OLAP Cubing process...
+2025-04-18 14:57:10.870 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 14:57:10.877 | INFO     | __main__:create_olap_cube:174 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 14:57:10.880 | INFO     | __main__:write_cube_to_csv:213 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 14:57:10.880 | INFO     | __main__:main:245 - OLAP Cubing process completed successfully.
+2025-04-18 14:57:10.881 | INFO     | __main__:main:246 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:12:16.056 | INFO     | __main__:main:113 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 15:12:16.058 | INFO     | __main__:load_olap_cube:50 - OLAP cube data successfully loaded from data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:12:16.062 | INFO     | __main__:analyze_sales_by_month:66 - Sales aggregated by Month successfully.
+2025-04-18 15:12:16.062 | INFO     | __main__:identify_least_profitable_month:77 - Least profitable month: 8.0 with revenue $4627.20.
+2025-04-18 15:12:16.062 | INFO     | __main__:main:123 - Least profitable month: 8.0
+2025-04-18 15:12:16.063 | INFO     | __main__:main:124 - Close the Figure to complete this script.
+2025-04-18 15:12:16.222 | INFO     | __main__:visualize_sales_by_month:104 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 15:13:49.529 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-18 15:13:49.531 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:13:49.537 | INFO     | __main__:create_olap_cube:162 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:13:49.538 | INFO     | __main__:write_cube_to_csv:201 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:13:49.539 | INFO     | __main__:main:233 - OLAP Cubing process completed successfully.
+2025-04-18 15:13:49.539 | INFO     | __main__:main:234 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:14:20.374 | INFO     | __main__:main:113 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 15:14:20.376 | INFO     | __main__:load_olap_cube:50 - OLAP cube data successfully loaded from data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:14:20.377 | INFO     | __main__:analyze_sales_by_month:66 - Sales aggregated by Month successfully.
+2025-04-18 15:14:20.378 | INFO     | __main__:identify_least_profitable_month:77 - Least profitable month: August with revenue $4627.20.
+2025-04-18 15:14:20.378 | INFO     | __main__:main:123 - Least profitable month: August
+2025-04-18 15:14:20.378 | INFO     | __main__:main:124 - Close the Figure to complete this script.
+2025-04-18 15:14:20.547 | INFO     | __main__:visualize_sales_by_month:104 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 15:19:59.059 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-18 15:19:59.061 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:19:59.067 | INFO     | __main__:create_olap_cube:162 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:19:59.069 | INFO     | __main__:write_cube_to_csv:201 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:19:59.069 | INFO     | __main__:main:233 - OLAP Cubing process completed successfully.
+2025-04-18 15:19:59.069 | INFO     | __main__:main:234 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:20:20.823 | INFO     | __main__:main:113 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 15:20:20.826 | INFO     | __main__:load_olap_cube:50 - OLAP cube data successfully loaded from data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:20:20.827 | INFO     | __main__:analyze_sales_by_month:66 - Sales aggregated by Month successfully.
+2025-04-18 15:20:20.827 | INFO     | __main__:identify_least_profitable_month:77 - Least profitable month: August with revenue $4627.20.
+2025-04-18 15:20:20.827 | INFO     | __main__:main:123 - Least profitable month: August
+2025-04-18 15:20:20.828 | INFO     | __main__:main:124 - Close the Figure to complete this script.
+2025-04-18 15:20:20.932 | ERROR    | __main__:visualize_sales_by_month:107 - Error visualizing sales by month: module 'matplotlib.pyplot' has no attribute 'line'
+2025-04-18 15:22:13.043 | INFO     | __main__:main:113 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 15:22:13.046 | INFO     | __main__:load_olap_cube:50 - OLAP cube data successfully loaded from data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:22:13.047 | INFO     | __main__:analyze_sales_by_month:66 - Sales aggregated by Month successfully.
+2025-04-18 15:22:13.047 | INFO     | __main__:identify_least_profitable_month:77 - Least profitable month: August with revenue $4627.20.
+2025-04-18 15:22:13.047 | INFO     | __main__:main:123 - Least profitable month: August
+2025-04-18 15:22:13.048 | INFO     | __main__:main:124 - Close the Figure to complete this script.
+2025-04-18 15:22:13.208 | INFO     | __main__:visualize_sales_by_month:104 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 15:33:00.734 | INFO     | __main__:main:219 - Starting OLAP Cubing process...
+2025-04-18 15:33:00.735 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:33:00.741 | INFO     | __main__:create_olap_cube:173 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:33:00.742 | INFO     | __main__:write_cube_to_csv:212 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:33:00.742 | INFO     | __main__:main:243 - OLAP Cubing process completed successfully.
+2025-04-18 15:33:00.742 | INFO     | __main__:main:244 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:33:53.934 | INFO     | __main__:main:219 - Starting OLAP Cubing process...
+2025-04-18 15:33:53.936 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:33:53.942 | INFO     | __main__:create_olap_cube:173 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:33:53.943 | INFO     | __main__:write_cube_to_csv:212 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:33:53.943 | INFO     | __main__:main:243 - OLAP Cubing process completed successfully.
+2025-04-18 15:33:53.944 | INFO     | __main__:main:244 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:37:13.343 | INFO     | __main__:main:219 - Starting OLAP Cubing process...
+2025-04-18 15:37:13.345 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:37:13.353 | INFO     | __main__:create_olap_cube:173 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:37:13.355 | INFO     | __main__:write_cube_to_csv:212 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:37:13.355 | INFO     | __main__:main:244 - OLAP Cubing process completed successfully.
+2025-04-18 15:37:13.355 | INFO     | __main__:main:245 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:38:50.280 | INFO     | __main__:main:219 - Starting OLAP Cubing process...
+2025-04-18 15:38:50.281 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:38:50.282 | INFO     | __main__:ingest_product_data_from_dw:125 - Product data successfully loaded from SQLite data warehouse.
+2025-04-18 15:38:50.288 | INFO     | __main__:create_olap_cube:173 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:38:50.291 | INFO     | __main__:write_cube_to_csv:212 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:38:50.291 | INFO     | __main__:main:244 - OLAP Cubing process completed successfully.
+2025-04-18 15:38:50.291 | INFO     | __main__:main:245 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:39:37.097 | INFO     | __main__:main:219 - Starting OLAP Cubing process...
+2025-04-18 15:39:37.099 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:39:37.100 | INFO     | __main__:ingest_product_data_from_dw:125 - Product data successfully loaded from SQLite data warehouse.
+2025-04-18 15:39:37.102 | ERROR    | __main__:create_olap_cube:176 - Error creating OLAP cube: 'product_name'
+2025-04-18 15:42:05.738 | INFO     | __main__:main:219 - Starting OLAP Cubing process...
+2025-04-18 15:42:05.739 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:42:05.741 | INFO     | __main__:ingest_product_data_from_dw:125 - Product data successfully loaded from SQLite data warehouse.
+2025-04-18 15:42:05.744 | ERROR    | __main__:create_olap_cube:176 - Error creating OLAP cube: 'product_name'
+2025-04-18 15:42:16.847 | INFO     | __main__:main:219 - Starting OLAP Cubing process...
+2025-04-18 15:42:16.848 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:42:16.850 | INFO     | __main__:ingest_product_data_from_dw:125 - Product data successfully loaded from SQLite data warehouse.
+2025-04-18 15:42:16.856 | INFO     | __main__:create_olap_cube:173 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:42:16.859 | INFO     | __main__:write_cube_to_csv:212 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:42:16.859 | INFO     | __main__:main:244 - OLAP Cubing process completed successfully.
+2025-04-18 15:42:16.859 | INFO     | __main__:main:245 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:43:26.407 | INFO     | __main__:main:207 - Starting OLAP Cubing process...
+2025-04-18 15:43:26.408 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:43:26.415 | INFO     | __main__:create_olap_cube:161 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:43:26.417 | INFO     | __main__:write_cube_to_csv:200 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:43:26.418 | INFO     | __main__:main:231 - OLAP Cubing process completed successfully.
+2025-04-18 15:43:26.418 | INFO     | __main__:main:232 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 15:59:11.124 | INFO     | __main__:main:207 - Starting OLAP Cubing process...
+2025-04-18 15:59:11.125 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 15:59:11.131 | INFO     | __main__:create_olap_cube:161 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 15:59:11.134 | INFO     | __main__:write_cube_to_csv:200 - OLAP cube saved to data\olap_cubing_outputs\productsales_olap_cube.csv.
+2025-04-18 15:59:11.134 | INFO     | __main__:main:231 - OLAP Cubing process completed successfully.
+2025-04-18 15:59:11.135 | INFO     | __main__:main:232 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 16:06:06.393 | INFO     | __main__:main:207 - Starting OLAP Cubing process...
+2025-04-18 16:06:06.395 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 16:06:06.402 | INFO     | __main__:create_olap_cube:161 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 16:06:06.405 | INFO     | __main__:write_cube_to_csv:200 - OLAP cube saved to data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:06:06.405 | INFO     | __main__:main:231 - OLAP Cubing process completed successfully.
+2025-04-18 16:06:06.406 | INFO     | __main__:main:232 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 16:07:52.462 | INFO     | __main__:main:207 - Starting OLAP Cubing process...
+2025-04-18 16:07:52.463 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 16:07:52.470 | INFO     | __main__:create_olap_cube:161 - OLAP cube created with dimensions: ['Month', 'product_id']
+2025-04-18 16:07:52.471 | INFO     | __main__:write_cube_to_csv:200 - OLAP cube saved to data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:07:52.471 | INFO     | __main__:main:232 - OLAP Cubing process completed successfully.
+2025-04-18 16:07:52.472 | INFO     | __main__:main:233 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 16:08:18.056 | INFO     | __main__:main:207 - Starting OLAP Cubing process...
+2025-04-18 16:08:18.058 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 16:08:18.064 | INFO     | __main__:create_olap_cube:161 - OLAP cube created with dimensions: ['Month', 'MonthName', 'product_id']
+2025-04-18 16:08:18.067 | INFO     | __main__:write_cube_to_csv:200 - OLAP cube saved to data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:08:18.067 | INFO     | __main__:main:232 - OLAP Cubing process completed successfully.
+2025-04-18 16:08:18.067 | INFO     | __main__:main:233 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 16:12:30.318 | INFO     | __main__:main:109 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:12:30.320 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:12:30.322 | INFO     | __main__:analyze_sales_by_month:62 - Sales aggregated by Month successfully.
+2025-04-18 16:12:30.322 | INFO     | __main__:identify_least_profitable_month:73 - Least profitable month: 8.0 with revenue $4627.20.
+2025-04-18 16:12:30.322 | INFO     | __main__:main:119 - Least profitable month: 8.0
+2025-04-18 16:12:30.322 | INFO     | __main__:main:120 - Close the Figure to complete this script.
+2025-04-18 16:12:30.484 | INFO     | __main__:visualize_sales_by_month:100 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 16:16:19.555 | INFO     | __main__:main:109 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:16:19.557 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:16:19.559 | INFO     | __main__:analyze_sales_by_month:62 - Sales aggregated by Month successfully.
+2025-04-18 16:16:19.559 | ERROR    | __main__:identify_least_profitable_month:78 - Error identifying least profitable month: 'MonthName'
+2025-04-18 16:17:15.785 | INFO     | __main__:main:109 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:17:15.788 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:17:15.789 | INFO     | __main__:analyze_sales_by_month:62 - Sales aggregated by Month successfully.
+2025-04-18 16:17:15.790 | INFO     | __main__:identify_least_profitable_month:73 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:17:15.790 | INFO     | __main__:main:119 - Least profitable month: August
+2025-04-18 16:17:15.790 | INFO     | __main__:main:120 - Close the Figure to complete this script.
+2025-04-18 16:17:15.919 | ERROR    | __main__:visualize_sales_by_month:103 - Error visualizing sales by month: 'Month'
+2025-04-18 16:18:37.259 | INFO     | __main__:main:109 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:18:37.261 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:18:37.261 | ERROR    | __main__:analyze_sales_by_month:65 - Error analyzing sales by Month: 'DataFrameGroupBy' object is not callable
+2025-04-18 16:20:48.734 | INFO     | __main__:main:109 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:20:48.737 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:20:48.738 | INFO     | __main__:analyze_sales_by_month:62 - Sales aggregated by Month successfully.
+2025-04-18 16:20:48.738 | INFO     | __main__:identify_least_profitable_month:73 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:20:48.738 | INFO     | __main__:main:119 - Least profitable month: None
+2025-04-18 16:20:48.738 | INFO     | __main__:main:120 - Close the Figure to complete this script.
+2025-04-18 16:20:48.838 | ERROR    | __main__:visualize_sales_by_month:103 - Error visualizing sales by month: 'Month'
+2025-04-18 16:28:59.789 | INFO     | __main__:main:122 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:28:59.791 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:28:59.792 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:28:59.793 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:28:59.793 | INFO     | __main__:main:132 - Least profitable month: None
+2025-04-18 16:28:59.793 | INFO     | __main__:main:133 - Close the Figure to complete this script.
+2025-04-18 16:28:59.794 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 16:28:59.958 | INFO     | __main__:visualize_sales_by_month:113 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 16:36:36.491 | INFO     | __main__:main:207 - Starting OLAP Cubing process...
+2025-04-18 16:36:36.492 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 16:36:36.498 | INFO     | __main__:create_olap_cube:161 - OLAP cube created with dimensions: ['Month', 'MonthName']
+2025-04-18 16:36:36.500 | INFO     | __main__:write_cube_to_csv:200 - OLAP cube saved to data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:36:36.500 | INFO     | __main__:main:232 - OLAP Cubing process completed successfully.
+2025-04-18 16:36:36.500 | INFO     | __main__:main:233 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 16:43:17.905 | INFO     | __main__:main:207 - Starting OLAP Cubing process...
+2025-04-18 16:43:17.906 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
+2025-04-18 16:43:17.913 | INFO     | __main__:create_olap_cube:161 - OLAP cube created with dimensions: ['Month', 'MonthName', 'product_id']
+2025-04-18 16:43:17.915 | INFO     | __main__:write_cube_to_csv:200 - OLAP cube saved to data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:43:17.915 | INFO     | __main__:main:232 - OLAP Cubing process completed successfully.
+2025-04-18 16:43:17.915 | INFO     | __main__:main:233 - Please see outputs in data\olap_cubing_outputs
+2025-04-18 16:44:20.217 | INFO     | __main__:main:122 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:44:20.219 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:44:20.220 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:44:20.220 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:44:20.221 | INFO     | __main__:main:132 - Least profitable month: None
+2025-04-18 16:44:20.221 | INFO     | __main__:main:133 - Close the Figure to complete this script.
+2025-04-18 16:44:20.221 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 16:44:20.380 | INFO     | __main__:visualize_sales_by_month:113 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 16:46:29.665 | INFO     | __main__:main:122 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:46:29.667 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:46:29.669 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:46:29.669 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:46:29.669 | INFO     | __main__:main:132 - Least profitable month: None
+2025-04-18 16:46:29.669 | INFO     | __main__:main:133 - Close the Figure to complete this script.
+2025-04-18 16:46:29.670 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 16:46:29.832 | INFO     | __main__:visualize_sales_by_month:113 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 16:46:56.969 | INFO     | __main__:main:122 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:46:56.971 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:46:56.973 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:46:56.973 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:46:56.973 | INFO     | __main__:main:133 - Close the Figure to complete this script.
+2025-04-18 16:46:56.974 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 16:46:57.130 | INFO     | __main__:visualize_sales_by_month:113 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 16:49:08.612 | INFO     | __main__:main:131 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:49:08.614 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:49:08.616 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:49:08.616 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:49:08.616 | INFO     | __main__:main:141 - Close the Figure to complete this script.
+2025-04-18 16:49:08.618 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 16:49:08.777 | INFO     | __main__:visualize_sales_by_month:122 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 16:50:20.174 | INFO     | __main__:main:131 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:50:20.176 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:50:20.178 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:50:20.178 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:50:20.178 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: August with total sales of $4627.20.
+2025-04-18 16:50:20.178 | INFO     | __main__:main:142 - Close the Figure to complete this script.
+2025-04-18 16:50:20.179 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 16:50:20.348 | INFO     | __main__:visualize_sales_by_month:122 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 16:50:29.355 | INFO     | __main__:main:149 - Analysis and visualization completed successfully.
+2025-04-18 16:50:30.298 | INFO     | __main__:main:148 - Analysis and visualization completed successfully.
+2025-04-18 16:50:31.086 | INFO     | __main__:main:140 - Analysis and visualization completed successfully.
+2025-04-18 16:50:31.898 | INFO     | __main__:main:140 - Analysis and visualization completed successfully.
+2025-04-18 16:50:32.498 | INFO     | __main__:main:140 - Analysis and visualization completed successfully.
+2025-04-18 16:50:56.926 | INFO     | __main__:main:131 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:50:56.928 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:50:56.930 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:50:56.930 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:50:56.931 | ERROR    | __main__:identify_most_profitable_month:101 - Error identifying most profitable month: single positional indexer is out-of-bounds
+2025-04-18 16:51:20.145 | INFO     | __main__:main:131 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:51:20.147 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:51:20.148 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:51:20.149 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:51:20.149 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 16:51:20.149 | INFO     | __main__:main:142 - Close the Figure to complete this script.
+2025-04-18 16:51:20.150 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 16:51:20.310 | INFO     | __main__:visualize_sales_by_month:122 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 16:59:14.744 | INFO     | __main__:main:144 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 16:59:14.746 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 16:59:14.748 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 16:59:14.748 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 16:59:14.748 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 16:59:14.748 | INFO     | __main__:main:155 - Close the Figure to complete this script.
+2025-04-18 16:59:14.749 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 16:59:14.910 | INFO     | __main__:visualize_sales_by_month:135 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 17:03:05.518 | INFO     | __main__:main:144 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:03:05.520 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:03:05.521 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:03:05.522 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:03:05.522 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:03:05.522 | ERROR    | __main__:identify_avg_sales_by_month_name:114 - Error analyzing average monthly sales: 'list' object has no attribute 'mean'
+2025-04-18 17:07:50.069 | INFO     | __main__:main:144 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:07:50.071 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:07:50.072 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:07:50.073 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:07:50.073 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:07:50.073 | ERROR    | __main__:identify_avg_sales_by_month_name:114 - Error analyzing average monthly sales: 'list' object has no attribute 'average'
+2025-04-18 17:11:37.423 | INFO     | __main__:main:131 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:11:37.425 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:11:37.427 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:11:37.427 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:11:37.427 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:11:37.427 | INFO     | __main__:main:142 - Close the Figure to complete this script.
+2025-04-18 17:11:37.428 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 17:11:37.593 | INFO     | __main__:visualize_sales_by_month:122 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 17:11:53.753 | INFO     | __main__:main:149 - Analysis and visualization completed successfully.
+2025-04-18 17:28:37.438 | INFO     | __main__:main:142 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:28:37.440 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:28:37.441 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:28:37.442 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:28:37.442 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:30:01.295 | INFO     | __main__:main:142 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:30:01.297 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:30:01.299 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:30:01.299 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:30:01.299 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:32:16.887 | INFO     | __main__:main:142 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:32:16.889 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:32:16.890 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:32:16.890 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:32:16.891 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:32:51.640 | INFO     | __main__:main:142 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:32:51.642 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:32:51.644 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:32:51.644 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:32:51.645 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:32:51.645 | ERROR    | __main__:identify_average_profitability:112 - Error identifying most profitable month: name 'cube_df' is not defined
+2025-04-18 17:35:25.602 | INFO     | __main__:main:142 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:35:25.604 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:35:25.606 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:35:25.606 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:35:25.606 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:35:25.606 | ERROR    | __main__:identify_average_profitability:112 - Error identifying most profitable month: name 'cube_df' is not defined
+2025-04-18 17:36:49.882 | INFO     | __main__:main:142 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 17:36:49.884 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 17:36:49.885 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 17:36:49.886 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 17:36:49.886 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 17:36:49.886 | ERROR    | __main__:identify_average_profitability:112 - Error identifying most profitable month: name 'cube_df' is not defined
+2025-04-18 19:43:15.261 | INFO     | __main__:main:131 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 19:43:15.263 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 19:43:15.265 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 19:43:15.265 | INFO     | __main__:identify_least_profitable_month:86 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 19:43:15.265 | INFO     | __main__:identify_most_profitable_month:97 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 19:43:15.266 | INFO     | __main__:main:142 - Close the Figure to complete this script.
+2025-04-18 19:43:15.266 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 19:43:15.428 | INFO     | __main__:visualize_sales_by_month:122 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 19:58:58.592 | INFO     | __main__:main:183 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 19:58:58.594 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 19:58:58.596 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 19:58:58.596 | INFO     | __main__:identify_least_profitable_month:101 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 19:58:58.597 | INFO     | __main__:identify_most_profitable_month:112 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 19:58:58.597 | INFO     | __main__:main:194 - Close the Figure to complete this script.
+2025-04-18 19:58:58.598 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 19:58:58.759 | INFO     | __main__:visualize_sales_by_month:137 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:06:26.504 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:06:26.506 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:06:26.508 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:06:26.508 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:06:26.508 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:06:26.508 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:06:26.509 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:06:26.680 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:09:57.011 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:09:57.013 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:09:57.015 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:09:57.015 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:09:57.015 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:09:57.015 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:09:57.016 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:09:57.198 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:17:39.774 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:17:39.776 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:17:39.777 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:17:39.778 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:17:39.778 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:17:39.778 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:17:39.779 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:17:39.786 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:17:39.786 | INFO     | __main__:main:200 - Analysis completed successfully.
+2025-04-18 20:17:39.955 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:21:11.914 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:21:11.916 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:21:11.918 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:21:11.918 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:21:11.918 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:21:11.918 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:21:11.919 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:21:11.921 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:21:11.922 | INFO     | __main__:main:200 - Analysis completed successfully.
+2025-04-18 20:21:12.170 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:22:52.877 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:22:53.720 | INFO     | __main__:main:205 - Analysis and visualization completed successfully.
+2025-04-18 20:22:54.088 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:22:54.578 | INFO     | __main__:main:200 - Analysis and visualization completed successfully.
+2025-04-18 20:22:54.583 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:22:54.583 | INFO     | __main__:main:204 - Analysis completed successfully.
+2025-04-18 20:22:54.788 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:22:55.504 | INFO     | __main__:main:200 - Analysis and visualization completed successfully.
+2025-04-18 20:22:55.509 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:22:55.510 | INFO     | __main__:main:204 - Analysis completed successfully.
+2025-04-18 20:22:55.731 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:22:56.962 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:22:57.489 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:22:57.968 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:22:58.933 | INFO     | __main__:main:201 - Analysis and visualization completed successfully.
+2025-04-18 20:22:58.939 | INFO     | __main__:analyze_sales_by_product_month:91 - Top products identified for each month.
+2025-04-18 20:22:59.167 | INFO     | __main__:visualize_sales_by_product_month:173 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:23:00.750 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:23:02.420 | INFO     | __main__:main:149 - Analysis and visualization completed successfully.
+2025-04-18 20:23:47.247 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:23:47.249 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:23:47.250 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:23:47.250 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:23:47.251 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:23:47.251 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:23:47.251 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:23:47.253 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:23:47.253 | INFO     | __main__:main:200 - Analysis completed successfully.
+2025-04-18 20:23:47.483 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:24:51.290 | INFO     | __main__:main:149 - Analysis and visualization completed successfully.
+2025-04-18 20:24:51.840 | INFO     | __main__:main:140 - Analysis and visualization completed successfully.
+2025-04-18 20:24:52.534 | INFO     | __main__:main:162 - Analysis and visualization completed successfully.
+2025-04-18 20:24:53.042 | INFO     | __main__:main:128 - Analysis and visualization completed successfully.
+2025-04-18 20:24:57.521 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:24:58.640 | INFO     | __main__:main:124 - Analysis and visualization completed successfully.
+2025-04-18 20:24:59.600 | INFO     | __main__:main:128 - Analysis and visualization completed successfully.
+2025-04-18 20:25:00.678 | INFO     | __main__:main:128 - Analysis and visualization completed successfully.
+2025-04-18 20:25:01.661 | INFO     | __main__:main:128 - Analysis and visualization completed successfully.
+2025-04-18 20:25:50.672 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:25:50.674 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:25:50.675 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:25:50.676 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:25:50.676 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:25:50.676 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:25:50.678 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:25:50.680 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:25:50.680 | INFO     | __main__:main:200 - Analysis completed successfully.
+2025-04-18 20:25:50.901 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:27:32.726 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:27:32.728 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:27:32.729 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:27:32.729 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:27:32.730 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:27:32.730 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:27:32.731 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:27:32.734 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:27:32.734 | INFO     | __main__:main:200 - Analysis completed successfully.
+2025-04-18 20:27:32.900 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:27:47.636 | INFO     | __main__:main:205 - Analysis and visualization completed successfully.
+2025-04-18 20:27:47.888 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:27:48.768 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:27:50.005 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:28:10.567 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:28:10.569 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:28:10.570 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:28:10.571 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:28:10.571 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:28:10.571 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:28:10.572 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:28:10.575 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:28:10.576 | INFO     | __main__:main:200 - Analysis completed successfully.
+2025-04-18 20:28:10.737 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:28:19.525 | INFO     | __main__:main:205 - Analysis and visualization completed successfully.
+2025-04-18 20:28:19.754 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:29:35.462 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:29:40.955 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:29:40.957 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:29:40.959 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:29:40.959 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:29:40.959 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:29:40.959 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:29:40.960 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:29:40.963 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:29:40.963 | INFO     | __main__:main:200 - Analysis completed successfully.
+2025-04-18 20:29:41.130 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:29:41.130 | INFO     | __main__:main:205 - Analysis and visualization completed successfully.
+2025-04-18 20:29:41.292 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:29:52.967 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:30:06.598 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:30:06.601 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:30:06.603 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:30:06.603 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:30:06.604 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:30:06.604 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:30:06.605 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:30:06.607 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:30:06.607 | INFO     | __main__:main:200 - Analysis completed successfully.
+2025-04-18 20:30:06.791 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:30:06.791 | INFO     | __main__:main:205 - Analysis and visualization completed successfully.
+2025-04-18 20:30:06.953 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:31:32.699 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:31:53.116 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:31:53.118 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:31:53.120 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:31:53.120 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:31:53.121 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:31:53.121 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:31:53.122 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:31:53.284 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:31:53.284 | INFO     | __main__:main:200 - Analysis and visualization completed successfully.
+2025-04-18 20:31:53.286 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:31:53.286 | INFO     | __main__:main:204 - Analysis completed successfully.
+2025-04-18 20:31:53.451 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:32:42.378 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:33:13.487 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:33:13.489 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:33:13.491 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:33:13.491 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:33:13.492 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:33:13.492 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:33:13.493 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:33:13.691 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:33:13.691 | INFO     | __main__:main:200 - Analysis and visualization completed successfully.
+2025-04-18 20:33:13.693 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:33:13.693 | INFO     | __main__:main:204 - Analysis completed successfully.
+2025-04-18 20:33:13.859 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:33:13.859 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.
+2025-04-18 20:36:56.483 | INFO     | __main__:main:182 - Starting SALES_LOW_REVENUE_MONTH analysis...
+2025-04-18 20:36:56.485 | INFO     | __main__:load_olap_cube:46 - OLAP cube data successfully loaded from data\olap_cubing_outputs\monthlysales_olap_cube.csv.
+2025-04-18 20:36:56.486 | INFO     | __main__:analyze_sales_by_month_name:76 - Sales aggregated by Month successfully.
+2025-04-18 20:36:56.487 | INFO     | __main__:identify_least_profitable_month:100 - Least profitable month: August with total sales of $4627.20.
+2025-04-18 20:36:56.487 | INFO     | __main__:identify_most_profitable_month:111 - Most profitable month: July with total sales of $21038.12.
+2025-04-18 20:36:56.487 | INFO     | __main__:main:193 - Close the Figure to complete this script.
+2025-04-18 20:36:56.488 | INFO     | __main__:analyze_sales_by_month:61 - Sales aggregated by Month successfully.
+2025-04-18 20:36:56.644 | INFO     | __main__:visualize_sales_by_month:136 - Visualization saved to data\results\sales_by_month.png.
+2025-04-18 20:36:56.645 | INFO     | __main__:main:200 - Analysis and visualization completed successfully.
+2025-04-18 20:36:56.646 | INFO     | __main__:analyze_sales_by_product_month:90 - Top products identified for each month.
+2025-04-18 20:36:56.647 | INFO     | __main__:main:204 - Analysis completed successfully.
+2025-04-18 20:36:56.809 | INFO     | __main__:visualize_sales_by_product_month:172 - Stacked bar chart saved to data\results\sales_by_month_and_product.png.
+2025-04-18 20:36:56.809 | INFO     | __main__:main:209 - Analysis and visualization completed successfully.

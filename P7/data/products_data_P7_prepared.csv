@@ -1,0 +1,9 @@
+ProductID,ProductName,Category,UnitPrice,UnitCost,UnitProfit
+101,laptop,Electronics,793.12,594.84,198.28
+102,hoodie,Clothing,39.1,27.76,11.34
+103,cable,Electronics,22.76,10.47,12.29
+104,hat,Clothing,43.1,24.57,18.53
+105,football,Sports,19.78,11.67,8.11
+106,controller,Electronics,88.98,59.62,29.36
+107,jacket,Clothing,67.02,46.91,20.11
+108,protector,Electronics,12.56,5.15,7.41

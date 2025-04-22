@@ -107,11 +107,11 @@ I recommend additional analysis of non-laptop electronic sales to identify ways 
 Many of the challenges in previous modules prepared me for this final project.  I did not run into any challenges for this project.
 
 ## Section 8. Ethical Considerations
-Is the data being used responsibly?
+### Is the data being used responsibly?
     The data used for this analysis does not include personal protected information (PPI).  If the data included PPI, additional caution would be warranted to ensure the analysis meets all regulatory standards governing personal data such as the Health Insurance Portability and Accountability Act (HIPPA), the General Data Protection Regulation (GDPR), and the California Consumer Privacy Act (CCPA).  An additional consideration is that proprietary company data is being used; the data includes product cost and profitability data which the company likely does not want shared with competitors.  Responsible use of the data also includes limiting the distribution of the data and any insights gleamed from it.
-Could the analysis reinforce biases?
+### Could the analysis reinforce biases?
     The data used from this analysis includes information from all sales, likely limiting the bias.  However, if the data was only captured from a subset of sales (select customers, stores, regions), the data could contain bias based on the unique characterics of the subset of sales.  
-Are you making decisions based on incomplete or unverified data?
+### Are you making decisions based on incomplete or unverified data?
     Decisions in this analysis are being made on the data from all sales.  The data has been cleaned and prepared to ensure the quality of the data.  Analysis based on incomplete or poor quality data can lead to data bias or result in incomplete or inaccurate conclusions being drawn from the data.
-How can the business use the insights responsibly?
+#### How can the business use the insights responsibly?
     Transparency and accountability are important in terms of using data and it's insights responsibility.  Transparency involves the company being open and honest regarding the source and manipulation of the data.  Accountability relates to the company or company leaders taking responsibility for the creation and use of the data.
